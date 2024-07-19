@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tetris Challenge</title>
+  <!--Import font -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2>Tetris</h2>
+  <h4 id="status">A fantastic 5 game</h4> <!-- Corrected closing tag -->
+    <button id="instructions">Instructions</button>
+    <!--Button for instructions -->
+    <button id="high-scores">High Scores</button>
+    </script>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p><p>⬅️ Left Arrow: moves the block left<br><br>
+          ➡️ Right Arrow: moves the block right<br><br>
+          ⬇️ Down Arrow: Accelerates the block's fall<br><br>
+          ⬆️ Up Arrow: Rotate the block clockwise<br><br>
+          Spacebar: Drop the block instantly<br><br>
+          A & D Keys: Rotate the block <br><br>
+          Score as many points as possible by clearing horizontal lines of Blocks. <br><br>
+          You must rotate, move, and drop the falling Tetriminos inside the playing field. <br><br>
+          Lines are cleared when they are filled with Blocks and have no empty spaces.</p>
+      </div>
+
+      
+      
+    </div>
+    <div id="button-container">
+      <button id="start">Start</button>
+      <h3>Score:<span id="score">0</span></h3>
+      <button id="reset">Reset</button>
+      <ul id="high-scores-list"></ul>
+    </div>
+    <div id="score-form" style="display: none;">
+      <h2>Your score: <span id="final-score"></span></h2>
+      <form onsubmit="event.preventDefault(); submitScore();">
+        <label for="player-name">Enter your name:</label>
+        <input type="text" id="player-name" name="player-name" required>
+        <input type="submit" value="Submit Score">
+      </form>
+    </div>
+    <canvas id="tetris" width="240" height="400"></canvas>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.813.0.min.js"></script>
+    <script src="tetris.js"></script>
+</body>
+
+</html>

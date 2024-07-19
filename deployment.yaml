@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fantastic5-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fantastic5-app
+  template:
+    metadata:
+      labels:
+        app: fantastic5-app
+    spec:
+      containers:
+      - name: fantastic5-app
+        image: public.ecr.aws/j4j2i5n9/fantastic-5-repo:latest
+        ports:
+        - containerPort: 80

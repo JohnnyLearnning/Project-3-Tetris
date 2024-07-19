@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "aws-sdk": "^2.1576.0",
+    "bootstrap": "^5.3.3"
+  }
+}
